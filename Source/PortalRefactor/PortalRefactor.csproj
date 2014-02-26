@@ -57,25 +57,30 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
-    <Content Include="js\app.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\lib\bootstrap\bootstrap.js" />
+    <Content Include="js\lib\bootstrap\bootstrap.min.js" />
+    <Content Include="js\lib\handlebars\handlebars-v1.3.0.js" />
+    <Content Include="js\lib\jquery\jquery.js" />
     <Content Include="js\require.js" />
-    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
+    <Folder Include="js\main\controllers\" />
+    <Folder Include="js\main\views\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="js\app\" />
-    <Folder Include="js\lib\" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

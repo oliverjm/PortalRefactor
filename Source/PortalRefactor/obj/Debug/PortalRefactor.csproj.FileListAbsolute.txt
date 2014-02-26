@@ -1,0 +1,5 @@
+C:\repo\PortalRefactor\Source\PortalRefactor\bin\DynamicsPortalRefactor.dll
+C:\repo\PortalRefactor\Source\PortalRefactor\bin\DynamicsPortalRefactor.pdb
+C:\repo\PortalRefactor\Source\PortalRefactor\obj\Debug\PortalRefactor.csprojResolveAssemblyReference.cache
+C:\repo\PortalRefactor\Source\PortalRefactor\obj\Debug\DynamicsPortalRefactor.dll
+C:\repo\PortalRefactor\Source\PortalRefactor\obj\Debug\DynamicsPortalRefactor.pdb

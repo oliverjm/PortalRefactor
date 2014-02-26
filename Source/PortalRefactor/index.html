@@ -1,9 +1,79 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>Portal Refactor</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/application.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="container-fluid">
+        <div id="topbar" class="row">
+            <a href="javascript:;" id="menu-trigger" class="dropdown-toggle" data-toggle="dropdown" data-target="#"><i class="glyphicon glyphicon-cog"></i></a>
+            <div id="top-nav">
+                <ul class="pull-right">
+                    <li><a href="/login.html"><i class="glyphicon glyphicon-user"></i>&nbsp;Login</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i>&nbsp;Logged in as
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a tabindex="-1" href="#">My Profile</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="/login.html" data-bind="click: logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="header" class="row">
+            <a href="/main.html" class="brand"></a>
 
+            <a href="javascript:;" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="glyphicon glyphicon-reorder"></i>
+            </a>
+
+            <div class="nav-collapse">
+                <ul id="main-nav" class="nav pull-right">
+                    <li id="main-li" class="nav-icon">
+                        <a href="/main.html">
+                            <i class="glyphicon glyphicon-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li id="register-li" class="nav">
+                        <a href="/register.html">
+                            <i class="glyphicon glyphicon-edit"></i>
+                            <span>Register</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="well">
+                    <div id="leftNav">
+                        nav holder
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h1>My users</h1>
+                <nav><a href="#list">List</a> - <a href="#add">Add</a></nav>
+                <div id="app" class="row"></div>
+            </div>
+        </div>
+        <div id="footer" class="row">
+            <div class="row">
+                <a href="http://microsoft.com/grantsmanager">Microsoft Grants Manager</a>
+            </div>
+            <div class="row">
+                © 2013 <a href="http://infostrat.com">InfoStrat</a>, all rights reserved.
+            </div>
+        </div>
+    </div>
+    <script data-main="js/main" src="js/require.js"></script>
 </body>
 </html>
