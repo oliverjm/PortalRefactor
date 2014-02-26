@@ -57,17 +57,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\application.css" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
+    <Content Include="js\lib\handlebars\extensions\handlebars.extensions.js" />
     <Content Include="js\main.js" />
     <Content Include="js\lib\bootstrap\bootstrap.js" />
     <Content Include="js\lib\bootstrap\bootstrap.min.js" />
     <Content Include="js\lib\handlebars\handlebars-v1.3.0.js" />
     <Content Include="js\lib\jquery\jquery.js" />
+    <Content Include="js\templates\templates.js" />
     <Content Include="js\require.js" />
   </ItemGroup>
   <ItemGroup>
@@ -81,6 +85,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\templates\leftNavigation.handlebars" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
