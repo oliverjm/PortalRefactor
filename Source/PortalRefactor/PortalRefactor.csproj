@@ -65,29 +65,24 @@
     <Content Include="css\site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
+    <Content Include="js\controllers\SideNavigationController.js" />
+    <Content Include="js\controllers\TopNavigationController.js" />
     <Content Include="js\extensions\HandlebarsExtensions.js" />
     <Content Include="js\main.js" />
     <Content Include="js\lib\bootstrap\bootstrap.js" />
     <Content Include="js\lib\bootstrap\bootstrap.min.js" />
     <Content Include="js\lib\handlebars\handlebars-v1.3.0.js" />
     <Content Include="js\lib\jquery\jquery.js" />
-    <Content Include="js\templates\templates.js" />
     <Content Include="js\require.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="js\main\controllers\" />
-    <Folder Include="js\main\views\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="js\templates\leftNavigation.handlebars" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
