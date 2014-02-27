@@ -2234,10 +2234,9 @@ Layout: Header
     z-index: 91;
     height: 80px;
     background: #1476c1;
-    border-bottom: 1px solid #000000;
-    -webkit-box-shadow: inset 0 1px 0 #2b4e72;
-    -moz-box-shadow: inset 0 1px 0 #2b4e72;
-    box-shadow: inset 0 1px 0 #2b4e72;
+    -webkit-box-shadow: inset 0 1px 0 #28496b;
+    -moz-box-shadow: inset 0 1px 0 #28496b;
+    box-shadow: inset 0 1px 0 #28496b;
 }
 
     #header .container

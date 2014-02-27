@@ -1,10 +1,9 @@
-﻿requirejs.config({
+﻿require.config({
     baseUrl: 'js/lib',
     paths: {
         'jquery':'jquery/jquery',
         'bootstrap': 'bootstrap/bootstrap.min',
-        'handlebars': 'handlebars/handlebars-v1.3.0',
-        'handlebarsExtensions': 'handlebars/extensions/handlebars.extensions'
+        'handlebars': 'handlebars/handlebars-v1.3.0'
     },
     shim: {
         'bootstrap': {
@@ -12,13 +11,10 @@
         },
         'handlebars': {
             exports: 'Handlebars'
-        },
-        'handlebarsExtensions': {
-            deps: ['handlebars']
         }
     }
 });
 
-requirejs(['jquery', 'handlebars', 'handlebarsExtensions'], function ($, Handlebars) {
+require(['jquery', '../controllers/SideNavigationController'], function ($, SideNavigationController) {
     $('#app').html('Hello World');
 });
