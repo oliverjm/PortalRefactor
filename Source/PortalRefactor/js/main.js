@@ -17,4 +17,6 @@
 
 require(['jquery', '../controllers/SideNavigationController'], function ($, SideNavigationController) {
     $('#app').html('Hello World');
+
+    $(document).trigger('started', ['dumb']);
 });

@@ -67,10 +67,7 @@
     <Content Include="index.html" />
     <Content Include="js\controllers\SideNavigationController.js" />
     <Content Include="js\controllers\TopNavigationController.js" />
-    <Content Include="js\events\EventDispatcher.js" />
     <Content Include="js\extensions\HandlebarsExtensions.js" />
-    <Content Include="js\lib\signals\signals.js" />
-    <Content Include="js\lib\signals\signals.min.js" />
     <Content Include="js\main.js" />
     <Content Include="js\lib\bootstrap\bootstrap.js" />
     <Content Include="js\lib\bootstrap\bootstrap.min.js" />

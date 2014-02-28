@@ -21,4 +21,8 @@
     var leftNavigationHtml = leftNavigationTemplate(data);
 
     $('#leftNav').html(leftNavigationHtml);
+
+    $(document).on('started', function (e, param1) {
+        alert(param1);
+    });
 });
