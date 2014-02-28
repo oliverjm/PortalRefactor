@@ -3,8 +3,7 @@
     paths: {
         'jquery':'jquery/jquery',
         'bootstrap': 'bootstrap/bootstrap.min',
-        'handlebars': 'handlebars/handlebars-v1.3.0',
-        'signals': 'signals/signals'
+        'handlebars': 'handlebars/handlebars-v1.3.0'
     },
     shim: {
         'bootstrap': {
@@ -16,8 +15,6 @@
     }
 });
 
-require(['jquery', '../controllers/SideNavigationController', '../events/EventDispatcher', '../controllers/TopNavigationController'], function ($, SideNavigationController, EventDispatcher, TopNavigationController) {
+require(['jquery', '../controllers/SideNavigationController'], function ($, SideNavigationController) {
     $('#app').html('Hello World');
-
-    EventDispatcher.started.dispatch('This', 'Works');
 });
