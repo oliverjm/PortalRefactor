@@ -1,4 +1,4 @@
-﻿define(['jquery', 'handlebars'], function ($, Handlebars) {
+﻿define(['jquery', 'handlebars', '../extensions/HandlebarsExtensions', '../events/EventDispatcher'], function ($, Handlebars, HandlebarsExtensions, EventDispatcher) {
     var data = {
         areas: [
             {
@@ -15,23 +15,16 @@
             }
         ]
     };
-
-    var leftNavigationSource = '<ul id="left-nav"class="nav nav-list">' +
-                                    '<li class="nav-header">Grant Manager</li>' +
-                                    '<li id="main-leftNav-li"><a href="/main.html"><i class="icon-home"></i>Home</a></li>' +
-                                    '{{#areas}}' +
-                                    '<li id="{{id}}-leftNav-li">' +
-                                       '<a href="{{path}}">' +
-                                          '<i class="glyphicon {{icon}}"></i>' +
-                                             '{{title}}' +
-                                       '</a>' +
-                                    '</li>' +
-                                    '{{/areas}}' +
-                                 '</ul>';
-
-    var leftNavigationTemplate = Handlebars.compile(leftNavigationSource);
+    
+    var leftNavigationTemplate = HandlebarsExtensions.getTemplate('LeftNavigationTemplate');
 
     var leftNavigationHtml = leftNavigationTemplate(data);
 
     $('#leftNav').html(leftNavigationHtml);
+
+    EventDispatcher.started.add(onStarted);
+
+    function onStarted(param1, param2) {
+        alert(param1 + ' | ' + param2);
+    }
 });
