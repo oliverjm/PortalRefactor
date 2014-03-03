@@ -16,8 +16,9 @@
     }
 });
 
-require(['jquery', '../controllers/SideNavigationController', '../events/EventDispatcher', '../controllers/TopNavigationController'], function ($, SideNavigationController, EventDispatcher, TopNavigationController) {
+require(['jquery', '../controllers/SideNavigationController', '../controllers/TopNavigationController'], function ($, SideNavigationController, TopNavigationController) {
     $('#app').html('Hello World');
 
-    EventDispatcher.started.dispatch('This', 'Works');
+    TopNavigationController.started.add(SideNavigationController.onStarted);
+    TopNavigationController.start();
 });

@@ -1,4 +1,4 @@
-﻿define(['jquery', 'handlebars', '../extensions/HandlebarsExtensions', '../events/EventDispatcher'], function ($, Handlebars, HandlebarsExtensions, EventDispatcher) {
+﻿define(['jquery', 'handlebars', '../extensions/HandlebarsExtensions'], function ($, Handlebars, HandlebarsExtensions) {
     var data = {
         areas: [
             {
@@ -22,9 +22,11 @@
 
     $('#leftNav').html(leftNavigationHtml);
 
-    EventDispatcher.started.add(onStarted);
-
     function onStarted(param1, param2) {
         alert(param1 + ' | ' + param2);
     }
+
+    return {
+        onStarted: onStarted
+    };
 });

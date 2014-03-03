@@ -1,7 +1,11 @@
-﻿define(['../events/EventDispatcher'], function (EventDispatcher) {
-    EventDispatcher.started.add(onStarted);
+﻿define(['signals'], function (Signal) {
 
-    function onStarted(param1, param2) {
-        alert(param1 + ' | ' + param2);
+    function start() {
+        this.started.dispatch('event', 'started');
     }
+
+    return {
+        started: new Signal(),
+        start: start
+    };
 });
